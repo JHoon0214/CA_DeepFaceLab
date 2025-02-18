@@ -317,7 +317,8 @@ Examples: df, liae, df-d, df-ud, liae-ud, ...
                     self.model_filename_list += [ [self.D_src, 'GAN.npy'] ]
 
                 # Initialize optimizers
-                lr=5e-5
+                # lr=5e-5
+                lr=1e-5
                 if self.options['lr_dropout'] in ['y','cpu'] and not self.pretrain:
                     lr_cos = 500
                     lr_dropout = 0.3

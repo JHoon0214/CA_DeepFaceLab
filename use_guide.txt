@@ -1,0 +1,9 @@
+1. 모듈 설치
+pip install -r requirements-cuda.txt
+
+2. 얼굴 추출
+python main.py extract --input-dir workspace_trump/data_src/ --output-dir workspace_trump/aligned/data_src/
+python main.py extract --input-dir workspace_trump/data_dst/ --output-dir workspace_trump/aligned/data_dst/
+
+3. 학습
+python main.py train --training-data-src-dir workspace/aligned/data_src/ --training-data-dst-dir workspace/aligned/data_dst/ --model SAEHD --model-dir workspace/model/
